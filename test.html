@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AngularJS Data Binding Example</title>
+<!-- Load AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="studentApp" ng-controller="studentcontroller">
+
+<h2>AngularJS Data Binding Example</h2>
+
+<!-- Two-way Data Binding -->
+<label>Enter Student Name: </label>
+<input type="text" ng-model="student.name" placeholder="Enter name" />
+<br><br>
+ <input type="text" ng-model="student.roll" placeholder="enter the roll">
+<input type="text" ng-model="student.cource" placeholder="enter the cource">
+<!-- One-way Binding -->
+<p><b>One-way binding (student name):</b> {{student.name}}</p>
+<p><b>One-way binding (student name):</b> {{student.name}}</p>
+
+<!-- Two-way Binding Live Update -->
+<p><b>Two-way binding (Live update in input box):</b></p>
+<input type="text" ng-model="student.name"/>
+
+<1-- Binding More Student Data -->
+<p><b>Roll No:</b> {{student.roll}}</p>
+<p><b>Course:</b> {{student.course}}</p>
+
+<script src="bind.js"></script>
+</body>
+</html>
+
